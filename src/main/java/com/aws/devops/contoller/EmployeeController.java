@@ -43,14 +43,14 @@ public class EmployeeController {
 	}
 	
 	@GetMapping("/by/{employeeid}")
-	public  Employee getemployee(@PathVariable(name = "employeeid") Long employeeid) {
+	public  Employee getemployee(@PathVariable(name = "employeeid") int employeeid) {
 		
 		return employeeservices.getEmployee(employeeid);
 		
 	}
 	
 	@DeleteMapping("/delete/{employeeid}")
-	public void delete(@PathVariable(name = "employeeid") Long employeeid ) {
+	public void delete(@PathVariable(name = "employeeid") int employeeid ) {
 		
 		employeeservices.delete_service(employeeid);
 		

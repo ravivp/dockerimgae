@@ -8,11 +8,8 @@ public class Employee {
 
 	
 	private int employeeid;
-	
-
-
 	private String employeename;
-	
+	private String designation;
 	
 	public Employee(int employeeid, String employeename, String designation) {
 		super();
@@ -20,10 +17,6 @@ public class Employee {
 		this.employeename = employeename;
 		this.designation = designation;
 	}
-
-	
-
-	private String designation;
 
 	public int getEmployeeid() {
 		return employeeid;
