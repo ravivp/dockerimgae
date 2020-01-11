@@ -11,7 +11,7 @@
 	<groupId>aws</groupId>
 	<artifactId>aws.devop</artifactId>
 	<version>1.0.0</version>
-	<!-- <packaging>war</packaging> -->
+         <packaging>war</packaging>
 	<name>aws_devops</name>
 	<description>spring boot mvc for devops</description>
 

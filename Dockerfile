@@ -1,4 +1,5 @@
-FROM openjdk:8
+FROM tomcat:8.0-jre8
+MAINTAINER ravivp
+ADD target/spring-devops-docker.war /usr/local/tomcat/webapps/spring-devops-docker.war
 EXPOSE 8080
-ADD target/spring-devops-docker.jar spring-devops-docker.jar
-ENTRYPOINT ["java","-jar","/spring-devops-docker.jar"]
+CMD ["catalina.sh", "run"]
