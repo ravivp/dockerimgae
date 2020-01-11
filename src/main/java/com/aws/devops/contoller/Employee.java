@@ -29,7 +29,7 @@ public class Employee {
 	public String getEmployeename() {
 		return employeename;
 	}
-     // added new comment line in Employ enity
+     // added new comment line in Employ enity class
     	public void setEmployeename(String employeename) {
 		this.employeename = employeename;
 	}
