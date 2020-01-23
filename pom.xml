@@ -55,7 +55,22 @@
 			</plugin>
 		</plugins>
 		
-		<finalName>spring-devops-docker</finalName>
+      		<finalName>spring-devops-docker</finalName>
 	</build>
 
+
+<distributionManagement>
+  <repository>
+      <id>nexus_spring</id>
+      	<name>nexus_spring</name>
+	    <!-- CHANGE HERE by your team nexus server -->
+	        <url> http://localhost:8081//repository/nexus_spring/</url>
+		  </repository>
+		    <snapshotRepository>
+		        <id>snapshots</id>
+				<name>nexus_spring</name>
+				    <!-- CHANGE HERE by your team nexus server -->
+				        <url> http://localhost:8081//repository/snapshots/</url>
+					  </snapshotRepository>
+					  </distributionManagement>
 </project>
