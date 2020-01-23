@@ -72,7 +72,7 @@
 		    <snapshotRepository>
 		        <id>snapshots</id>
 				<name>nexus_spring</name>
-				    <!-- CHANGE HERE by your team nexus server -->
+				     CHANGE HERE by your team nexus server -->
 					<!--
 				        <url> http://localhost:8081/repository/snapshots/</url>
 					  </snapshotRepository>
