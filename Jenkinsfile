@@ -3,6 +3,6 @@ node{
      git 'https://github.com/ravivp/dockerimgae.git'
   }
   stage('build project'){
-  sh 'mvn clean package'
+  sh 'clean package'
   }
 }
