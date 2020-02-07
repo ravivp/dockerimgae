@@ -2,7 +2,7 @@ node{
   
   def app
   stage('SCM Checkout'){
-     git 'https://github.com/ravivp/dockerimgae.git'
+     git branch: 'aws', url: 'https://github.com/ravivp/dockerimgae.git'
   }
   stage('build project'){
     def MAVEN_HOME= tool name: 'mvn', type: 'maven'
