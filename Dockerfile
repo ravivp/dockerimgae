@@ -1,5 +1,3 @@
-FROM tomcat:8.0-jre8
+FROM websphere-liberty:springBoot2
 MAINTAINER ravivp
-ADD ./target/spring-devops-docker.war /usr/local/tomcat/webapps/spring-devops-docker.war
-EXPOSE 8081
-CMD ["catalina.sh", "run"]
+COPY  --chown=1001:0 ./target/spring-devops-docker.war /config/dropins/spring/spring-devops-docker.war

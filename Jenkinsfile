@@ -12,7 +12,7 @@ node{
    stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("valunaik/pipeline_image")
+        app = docker.build("valunaik/websphare")
     }
 
     stage('Test image') {
